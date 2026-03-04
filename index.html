@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="مكتب المهندس عبدالله مطر البقمي للاستشارات الهندسية — تصميم معماري، إشراف هندسي، اعتمادات ورخص بناء." />
+  <title>مكتب المهندس عبدالله مطر البقمي للاستشارات الهندسية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     الناف بار
+════════════════════════════════════════════ -->
+<header class="navbar" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="القائمة الرئيسية">
+
+      <!-- الشعار — يمين الشريط -->
+      <a href="index.html" class="nav-logo" aria-label="الصفحة الرئيسية">
+        <div class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22" fill="none" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <strong>م. عبدالله مطر البقمي</strong>
+          <span>للاستشارات الهندسية</span>
+        </div>
+      </a>
+
+      <!-- روابط سريعة -->
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="projects.html">المشاريع</a></li>
+        <li><a href="calculator.html">الحاسبة</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+
+      <!-- الإجراءات -->
+      <div class="nav-actions">
+        <button class="lang-btn" aria-label="تبديل اللغة">عربي / EN</button>
+        <a href="#contact" class="btn btn-primary btn-sm">تواصل معنا</a>
+        <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+<!-- القائمة المتنقلة -->
+<nav class="nav-mobile" aria-label="القائمة المتنقلة">
+  <a href="index.html">الرئيسية</a>
+  <a href="#about">من نحن</a>
+  <a href="#services">خدماتنا</a>
+  <a href="projects.html">المشاريع</a>
+  <a href="calculator.html">الحاسبة</a>
+  <a href="#contact">تواصل معنا</a>
+  <div style="padding-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap;">
+    <a href="#contact" class="btn btn-primary">تواصل معنا</a>
+    <a href="https://wa.me/966500111809" target="_blank" rel="noopener" class="btn btn-outline">واتساب 🟢</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     الهيرو سيكشن
+════════════════════════════════════════════ -->
+<main>
+<section class="hero" aria-label="الهيرو">
+  <div class="hero-circle" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-slider">
+
+      <!-- الشريحة الأولى -->
+      <div class="slide active">
+        <span class="slide-tag">تصميم معماري</span>
+        <h1>تصميم يرفع قيمة مشروعك.</h1>
+        <p>مخططات هندسية دقيقة تلبي طموحك وتتوافق تماماً مع كافة الاشتراطات.</p>
+        <div class="slide-btns">
+          <a href="#contact" class="btn btn-white btn-lg">ابدأ الآن</a>
+          <a href="calculator.html" class="btn btn-ghost btn-lg">احسب التكلفة</a>
+        </div>
+      </div>
+
+      <!-- الشريحة الثانية -->
+      <div class="slide">
+        <span class="slide-tag">إشراف هندسي</span>
+        <h1>إشراف يضمن التنفيذ الصحيح.</h1>
+        <p>متابعة ميدانية دقيقة لضبط الجودة، وتجنب الهدر.</p>
+        <div class="slide-btns">
+          <a href="#contact" class="btn btn-white btn-lg">احجز اليوم</a>
+          <a href="#services" class="btn btn-ghost btn-lg">خدماتنا</a>
+        </div>
+      </div>
+
+      <!-- الشريحة الثالثة -->
+      <div class="slide">
+        <span class="slide-tag">اعتمادات ورخص</span>
+        <h1>ترخيص واعتمادات بدون تعقيد.</h1>
+        <p>تجهيز ملفاتك الفنية ومتابعتها مع الجهات المختصة باحترافية كاملة.</p>
+        <div class="slide-btns">
+          <a href="#contact" class="btn btn-white btn-lg">اعتمد مشروعك</a>
+          <a href="#services" class="btn btn-ghost btn-lg">تعرّف أكثر</a>
+        </div>
+      </div>
+
+      <!-- التحكم بالسلايدر -->
+      <div class="slider-controls">
+        <div class="slider-dots" role="tablist" aria-label="شرائح الهيرو">
+          <button class="dot active" role="tab" aria-label="الشريحة 1" aria-selected="true"></button>
+          <button class="dot" role="tab" aria-label="الشريحة 2" aria-selected="false"></button>
+          <button class="dot" role="tab" aria-label="الشريحة 3" aria-selected="false"></button>
+        </div>
+        <div class="slider-arrows">
+          <button class="arrow-btn arrow-prev" aria-label="السابق">&#8594;</button>
+          <button class="arrow-btn arrow-next" aria-label="التالي">&#8592;</button>
+        </div>
+      </div>
+
+      <!-- أزرار عامة -->
+      <div class="hero-actions">
+        <a href="calculator.html" class="btn btn-white btn-lg">احسب التكلفة</a>
+        <a href="https://wa.me/966500111809?text=%D8%A3%D9%88%D8%AF%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">استشارة مجانية 🟢</a>
+      </div>
+
+    </div><!-- /hero-slider -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     من نحن
+════════════════════════════════════════════ -->
+<section class="section about" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- البطاقة البصرية -->
+      <div class="about-visual">
+        <div class="about-card">
+          <div>
+            <h3>م. عبدالله مطر البقمي</h3>
+            <p style="color:rgba(255,255,255,.6);margin-top:.5rem;font-size:.95rem;">للاستشارات الهندسية</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><strong>+15</strong><span>سنة خبرة</span></div>
+            <div class="stat"><strong>+200</strong><span>مشروع منجز</span></div>
+            <div class="stat"><strong>6</strong><span>أقسام هندسية</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- المحتوى النصي -->
+      <div class="about-content">
+        <span class="section-tag">من نحن</span>
+        <h2 id="about-title">رفيقك الموثوق في رحلة البناء</h2>
+        <p>مكتب المهندس عبدالله مطر البقمي للاستشارات الهندسية.. رفيقك الموثوق في رحلة البناء. نقدم منظومة متكاملة من الحلول الهندسية التي تبدأ من ابتكار المخططات المعمارية، وتمر بإشراف ميداني دقيق على التنفيذ وتأسيس البنية التحتية، وصولاً إلى استخراج كافة التراخيص والاعتمادات الرسمية. نحن هنا لنمنح مشاريعكم بمختلف أنواعها أساساً هندسياً صلباً يجمع بين الكفاءة والاحترافية.</p>
+
+        <div class="vision-mission">
+          <div class="vm-card">
+            <h4>🎯 الرؤية</h4>
+            <p>أن نكون الخيار الأكثر ثقة في الاستشارات الهندسية من حيث الدقة والالتزام وجودة الإشراف.</p>
+          </div>
+          <div class="vm-card">
+            <h4>💡 الرسالة</h4>
+            <p>نحوّل فكرة العميل إلى مشروع قابل للتنفيذ عبر تصميم احترافي وإشراف فعّال وإجراءات نظامية مُنجزة بسلاسة.</p>
+          </div>
+        </div>
+
+        <a href="projects.html" class="btn btn-primary">استعرض مشاريعنا</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     نخدم مختلف الأنشطة (9 كروت)
+════════════════════════════════════════════ -->
+<section class="section activities" id="activities" aria-labelledby="activities-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">قطاعاتنا</span>
+      <h2 id="activities-title">نخدم مختلف الأنشطة</h2>
+      <p>خبرتنا الهندسية تمتد لتشمل كافة القطاعات.. من التصميم السكني المبتكر إلى المشاريع الكبرى متعددة التخصصات.</p>
+    </div>
+
+    <div class="grid-3" role="list">
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">🏠</div>
+        <h4>مبانٍ سكنية</h4>
+        <p>راحة وخصوصية مع استغلال ذكي للمساحات.</p>
+      </article>
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">🏪</div>
+        <h4>مبانٍ تجارية</h4>
+        <p>تخطيط يخدم التشغيل ويزيد كفاءة المتر.</p>
+      </article>
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">🏢</div>
+        <h4>مبانٍ إدارية</h4>
+        <p>تنظيم حركة وخدمات بشكل عملي واحترافي.</p>
+      </article>
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">🏡</div>
+        <h4>فلل</h4>
+        <p>تصميم يعكس ذوقك ويحقق الوظيفة والجمال.</p>
+      </article>
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">🏗️</div>
+        <h4>عمائر</h4>
+        <p>حلول تكرار وكفاءة تقلل التكلفة وتحسن العائد.</p>
+      </article>
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">🗺️</div>
+        <h4>مخططات خاصة</h4>
+        <p>تصميم بنية تحتية واعتماد المخطط لدى الجهات.</p>
+      </article>
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">🏘️</div>
+        <h4>كمبوندات</h4>
+        <p>إدارة تصميم متعدد المراحل والتخصصات.</p>
+      </article>
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">🛣️</div>
+        <h4>بوليفاردات</h4>
+        <p>تنسيق مشاريع كبيرة بواجهات ومسارات وخدمات.</p>
+      </article>
+
+      <article class="activity-card" role="listitem">
+        <div class="activity-icon" aria-hidden="true">⛽</div>
+        <h4>محطات وقود</h4>
+        <p>تصميم وفق اشتراطات السلامة والتشغيل والاعتماد.</p>
+      </article>
+
+    </div>
+
+    <div class="section-cta">
+      <a href="calculator.html" class="btn btn-primary btn-lg">احسب تكلفة مشروعك الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     خدماتنا (6 كروت)
+════════════════════════════════════════════ -->
+<section class="section services" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">خدمتنا</span>
+      <h2 id="services-title">خدمتنا</h2>
+      <p>نرافقك بخطوات واضحة، من الفكرة والتصميم وحتى الإشراف والاعتمادات الرسمية.</p>
+    </div>
+
+    <div class="grid-2x3" role="list">
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true">✏️</div>
+        <h3>تصميم معماري</h3>
+        <p>مخططات عملية وجمالية قابلة للتنفيذ.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true">🏛️</div>
+        <h3>تصميم إنشائي</h3>
+        <p>أمان وجودة وفق المعايير واحتياج الموقع.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true">🔧</div>
+        <h3>بنية تحتية</h3>
+        <p>شبكات ومخططات للمواقع والمخططات الخاصة.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true">👷</div>
+        <h3>إشراف هندسي</h3>
+        <p>متابعة تنفيذ وضبط جودة ومطابقة.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true">📋</div>
+        <h3>اعتماد المخططات</h3>
+        <p>تجهيز ملفات ومتابعة الاعتمادات الرسمية.</p>
+      </article>
+
+      <article class="service-card" role="listitem">
+        <div class="service-icon" aria-hidden="true">📄</div>
+        <h3>رخص البناء</h3>
+        <p>إنجاز إجراءات الرخص والمتطلبات النظامية.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     أقسام المكتب
+════════════════════════════════════════════ -->
+<section class="section departments" id="departments" aria-labelledby="dept-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">أقسام المكتب</span>
+      <h2 id="dept-title">أقسام المكتب</h2>
+      <p>منظومة هندسية متكاملة تعمل بتناغم تام، لضمان أعلى مستويات الدقة من المخطط الأول وحتى اكتمال التنفيذ.</p>
+    </div>
+
+    <div class="dept-grid" role="list">
+
+      <article class="dept-card" role="listitem">
+        <div class="dept-number" aria-hidden="true">01</div>
+        <h3>المساحة</h3>
+        <p>نضع حجر الأساس لمشروعك برفع مساحي دقيق وبيانات موثوقة، تضمن سلامة التخطيط قبل البدء في أي خطوة.</p>
+      </article>
+
+      <article class="dept-card" role="listitem">
+        <div class="dept-number" aria-hidden="true">02</div>
+        <h3>المعماري</h3>
+        <p>نحول رؤيتك إلى واقع من خلال تخطيط وظيفي ذكي وواجهات عصرية تجمع بين الفخامة والاحترافية.</p>
+      </article>
+
+      <article class="dept-card" role="listitem">
+        <div class="dept-number" aria-hidden="true">03</div>
+        <h3>الإنشائي</h3>
+        <p>هندسة إنشائية متطورة تقدم حلولاً آمنة ومتوازنة، تضمن استدامة المبنى وكفاءته الإنشائية القصوى.</p>
+      </article>
+
+      <article class="dept-card" role="listitem">
+        <div class="dept-number" aria-hidden="true">04</div>
+        <h3>الميكانيكا</h3>
+        <p>تصميم أنظمة ميكانيكية متكاملة تضمن أعلى كفاءة تشغيلية وتوفر بيئة مريحة ومستدامة داخل مشروعك.</p>
+      </article>
+
+      <article class="dept-card" role="listitem">
+        <div class="dept-number" aria-hidden="true">05</div>
+        <h3>الكهرباء</h3>
+        <p>حلول كهربائية ذكية تشمل توزيع الأحمال والإنارة وفق أدق المعايير الفنية لضمان الأمان والترشيد.</p>
+      </article>
+
+      <article class="dept-card" role="listitem">
+        <div class="dept-number" aria-hidden="true">06</div>
+        <h3>التنسيق والإشراف</h3>
+        <p>حلقة الوصل التي تضمن دقة التنفيذ الميداني من خلال ربط كافة الأقسام ومتابعة سير العمل لحظة بلحظة.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     لماذا نحن؟
+════════════════════════════════════════════ -->
+<section class="section why-us" id="why" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">مميزاتنا</span>
+      <h2 id="why-title">لماذا نحن؟</h2>
+      <p>نلتزم بتحويل التحديات الهندسية إلى نتائج ملموسة، من خلال دقة التخطيط، وصرامة الإشراف، وسرعة الإنجاز.</p>
+    </div>
+
+    <div class="why-grid" role="list">
+
+      <article class="why-card" role="listitem">
+        <div class="why-icon" aria-hidden="true">🏆</div>
+        <h3>خبرة عريقة</h3>
+        <p>سجل حافل بمشاريع متنوعة وبمقاييس هندسية عالمية تضمن لك الجودة.</p>
+      </article>
+
+      <article class="why-card" role="listitem">
+        <div class="why-icon" aria-hidden="true">🏙️</div>
+        <h3>مشاريع كبرى</h3>
+        <p>متخصصون في تخطيط الكمبوندات، البوليفاردات، والمشاريع الاستثمارية الضخمة.</p>
+      </article>
+
+      <article class="why-card" role="listitem">
+        <div class="why-icon" aria-hidden="true">🔍</div>
+        <h3>إشراف ميداني</h3>
+        <p>تقارير متابعة دورية تضمن تقليل الأخطاء، ومنع الهدر، ومطابقة المواصفات.</p>
+      </article>
+
+      <article class="why-card" role="listitem">
+        <div class="why-icon" aria-hidden="true">⚙️</div>
+        <h3>حلول متكاملة</h3>
+        <p>منظومة واحدة تشمل التصميم، الإشراف، استخراج الرخص، والاعتمادات الرسمية.</p>
+      </article>
+
+      <article class="why-card" role="listitem">
+        <div class="why-icon" aria-hidden="true">⚡</div>
+        <h3>سرعة الإنجاز</h3>
+        <p>مسار عمل زمني واضح يضمن تفادي التعطيل وتسليم مشروعك في الموعد.</p>
+      </article>
+
+      <article class="why-card" role="listitem">
+        <div class="why-icon" aria-hidden="true">🤝</div>
+        <h3>شفافية مطلقة</h3>
+        <p>خطوات عمل محددة مسبقاً، وتواصل مباشر يضعك في قلب الحدث دائماً.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     تواصل معنا
+════════════════════════════════════════════ -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">تواصل معنا</span>
+      <h2 id="contact-title">تواصل معنا</h2>
+      <p>خطوتك الأولى نحو بناء مشروعك تبدأ من هنا.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- معلومات التواصل -->
+      <div class="contact-info">
+        <p>اترك بياناتك وسيقوم فريقنا الهندسي بالتواصل معك لترتيب استشارة فنية ومراجعة كافة احتياجاتك.</p>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📱</div>
+          <div>
+            <strong>واتساب</strong>
+            <span>+966500111809</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📧</div>
+          <div>
+            <strong>البريد الإلكتروني</strong>
+            <span>يُضاف لاحقاً</span>
+          </div>
+        </div>
+
+        <a href="https://wa.me/966500111809" target="_blank" rel="noopener" class="whatsapp-direct" aria-label="تواصل عبر واتساب">
+          <span>💬</span>
+          <span>تواصل مباشر عبر واتساب — wa.me/+966500111809</span>
+        </a>
+      </div>
+
+      <!-- الفورم -->
+      <div class="contact-form-card">
+        <form id="contactForm" novalidate aria-label="نموذج التواصل">
+          <div class="form-grid">
+
+            <!-- الاسم الكامل -->
+            <div class="form-group">
+              <label for="fullname">الاسم الكامل <span class="req" aria-label="إلزامي">*</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="أدخل اسمك الكامل" required autocomplete="name" />
+            </div>
+
+            <!-- رقم الجوال -->
+            <div class="form-group">
+              <label for="phone">رقم الجوال <span class="req" aria-label="إلزامي">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required autocomplete="tel" />
+            </div>
+
+            <!-- نوع المشروع -->
+            <div class="form-group">
+              <label for="ptype">نوع المشروع <span class="req" aria-label="إلزامي">*</span></label>
+              <select id="ptype" name="ptype" required>
+                <option value="" disabled selected>اختر نوع المشروع</option>
+                <option>سكني</option>
+                <option>تجاري</option>
+                <option>إداري</option>
+                <option>فيلا</option>
+                <option>عمارة</option>
+                <option>كمبوند</option>
+                <option>بوليفار</option>
+                <option>محطة وقود</option>
+                <option>أخرى</option>
+              </select>
+            </div>
+
+            <!-- المدينة -->
+            <div class="form-group">
+              <label for="city">المدينة</label>
+              <input type="text" id="city" name="city" placeholder="المدينة (اختياري)" autocomplete="address-level2" />
+            </div>
+
+            <!-- تفاصيل المشروع -->
+            <div class="form-group form-full">
+              <label for="details">تفاصيل المشروع</label>
+              <textarea id="details" name="details" rows="3" placeholder="أضف أي تفاصيل تخص مشروعك (اختياري)"></textarea>
+            </div>
+
+            <!-- رسالة مختصرة -->
+            <div class="form-group form-full">
+              <label for="message">رسالة مختصرة</label>
+              <textarea id="message" name="message" rows="3" placeholder="رسالتك (اختياري)"></textarea>
+            </div>
+
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary btn-lg">إرسال عبر واتساب 💬</button>
+          </div>
+
+          <div class="success-msg" role="alert" aria-live="polite">
+            <span>✅</span>
+            <span>تم إرسال بياناتك! سيتم تحويلك لواتساب الآن.</span>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ══════════════════════════════════════════
+     الفوتر
+════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- العمود الأول: عن المكتب -->
+      <div class="footer-about">
+        <div class="footer-logo">
+          <div class="logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="white"/>
+              <polyline points="9 22 9 12 15 12 15 22" fill="none" stroke="rgba(168,176,186,.5)" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <strong>م. عبدالله مطر البقمي</strong>
+            <span>للاستشارات الهندسية</span>
+          </div>
+        </div>
+        <p>مكتب المهندس عبدالله مطر البقمي للاستشارات الهندسية</p>
+        <div class="footer-tagline">
+          <span>تصميم</span>•<span>إشراف</span>•<span>اعتمادات</span>•<span>رخص</span>
+        </div>
+      </div>
+
+      <!-- العمود الثاني: روابط سريعة -->
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="projects.html">المشاريع</a></li>
+          <li><a href="calculator.html">الحاسبة</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <!-- العمود الثالث: التواصل -->
+      <div class="footer-col">
+        <h4>التواصل</h4>
+        <div class="footer-contact-item">
+          <span>📱</span>
+          <span>واتساب: +966500111809</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📧</span>
+          <span>البريد الإلكتروني الرسمي — يُضاف لاحقاً</span>
+        </div>
+
+        <div class="social-icons" aria-label="وسائل التواصل الاجتماعي">
+          <a href="https://wa.me/966500111809" target="_blank" rel="noopener" class="social-icon" aria-label="واتساب">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.12 1.535 5.845L.057 23.5l5.818-1.527A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.81 9.81 0 0 1-5.003-1.368l-.36-.214-3.717.976.992-3.617-.235-.371A9.818 9.818 0 1 1 12 21.818z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="تويتر X">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="إنستغرام">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="يوتيوب">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- حقوق الملكية -->
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; <span id="year"></span> — مكتب المهندس عبدالله مطر البقمي للاستشارات الهندسية</p>
+      <p>برمجة وتصميم <strong>Air Menu</strong></p>
+    </div>
+  </div>
+</footer>
+
+<!-- زر الرجوع للأعلى -->
+<button class="scroll-top" aria-label="الرجوع للأعلى">&#8679;</button>
+
+<!-- زر واتساب العائم -->
+<a href="https://wa.me/966500111809" target="_blank" rel="noopener" class="wa-float" aria-label="تواصل عبر واتساب">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.12 1.535 5.845L.057 23.5l5.818-1.527A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.81 9.81 0 0 1-5.003-1.368l-.36-.214-3.717.976.992-3.617-.235-.371A9.818 9.818 0 1 1 12 21.818z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
