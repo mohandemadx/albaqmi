@@ -352,8 +352,11 @@ function displayCalcResult({ ptype, area, floors, base, estimate, addonAmt, addo
 function initLangToggle() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      // يمكن هنا لاحقاً إضافة منطق التبديل الفعلي للإنجليزية
-      alert('النسخة الإنجليزية قيد التطوير — English version coming soon.');
+      const isArabic = document.documentElement.lang === 'ar';
+      const path = isArabic
+        ? window.location.pathname.replace(/\/([^/]+\.html)/, '/en/$1')
+        : window.location.pathname.replace('/en/', '/');
+      window.location.href = path;
     });
   });
 }
