@@ -1,0 +1,36 @@
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+# Ignore IDE specific files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+# Ignore .vscode settings
+.vscode/
+# Ignore node_modules
+node_modules/
+# Ignore build output
+dist/
+# Ignore logs
+logs/
+*.log
+# Ignore environment variables
+.env
+# Ignore coverage reports
+coverage/
+# Ignore temporary files
+tmp/
+# Ignore compiled files
+*.class
+*.pyc
+# Ignore package-lock.json
+package-lock.json
+# Ignore yarn.lock
+yarn.lock
+# Ignore database files
+*.db
+# Ignore secrets
+secrets/
+# Ignore Docker files
+docker-compose.override.yml
