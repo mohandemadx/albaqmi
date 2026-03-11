@@ -287,6 +287,7 @@ p  { font-weight: 400; }
   content: '';
   position: absolute;
   inset: 0;
+  opacity: .1;
   background-image:
     linear-gradient(135deg, rgba(168,176,186,.07) 25%, transparent 25%),
     linear-gradient(225deg, rgba(168,176,186,.07) 25%, transparent 25%),
@@ -337,9 +338,19 @@ p  { font-weight: 400; }
 
 .slide {
   display: none;
+  min-height: 70vh;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
   animation: fadeIn .7s ease;
 }
-.slide.active { display: block; }
+
+.slide.active {
+  display: flex;
+}
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(24px); }
@@ -348,7 +359,7 @@ p  { font-weight: 400; }
 
 .slide-tag {
   display: inline-block;
-  font-size: .78rem;
+  font-size: .98rem;
   font-weight: 700;
   letter-spacing: .14em;
   color: var(--secondary);
@@ -365,19 +376,14 @@ p  { font-weight: 400; }
   color: rgba(255,255,255,.72);
   font-size: 1.1rem;
   max-width: 520px;
-  margin-bottom: 2.2rem;
+  margin: 0 auto 2.2rem;
 }
 
-.slide-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-
-/* Hero sub-buttons */
-.hero-actions {
+.slide-btns {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 3.5rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid rgba(168,176,186,.2);
 }
 
 /* Slider controls */
