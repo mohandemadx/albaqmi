@@ -272,7 +272,14 @@ p  { font-weight: 400; }
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: var(--primary);
+
+  background:
+    linear-gradient(rgba(8,26,51,.85), rgba(8,26,51,.85)),
+    url("assets/hero_bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Geometric background pattern */
